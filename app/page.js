@@ -20,6 +20,15 @@ export default function Home() {
           <p className='text-center mx-5 mb-4 underline underline-offset-4'>P19 - Basic Registration Form</p>
           <p className='text-center mx-5 text-xs'>Build a basic registration form in NextJS where users can enter first name, last name, and email. Post-registration, an error message is displayed for each field if validation fails else a success message is shown</p>
         </div>
+
+        <p>make a registration form</p>
+        <p>------------</p>
+        <p>first name input</p>
+        <p>last name input</p>
+        <p>email input</p>
+        <p>make this 3 into a form</p>
+        <p>if ok, display success message</p>
+        <p>if not ok, display error on each input</p>
       </div>
 
     </main>
