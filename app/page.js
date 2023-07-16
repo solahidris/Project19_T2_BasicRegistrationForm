@@ -1,10 +1,11 @@
-"use client"
-
 import Image from "next/image";
-import { useState } from "react";
-import SubmitForm from "./SubmitForm";
+// import { useState } from "react";
 
 export default function Home() {
+
+  const fnValue = "fnValue";
+  // const [fnValue, setFnValue] = useState("fnValue")
+
   return (
     <main className="flex min-h-screen flex-col items-center p-10">
       {/* NextJS Logo */}
@@ -38,7 +39,7 @@ export default function Home() {
           <form>
             <div>
               <label htmlFor="firstName">First Name Input: </label>
-              <input type="text" id="firstName" name="firstName" />
+              <input type="text" id="firstName" name="firstName" value={fnValue} />
             </div>
             <div>
               <label htmlFor="lastName">Last Name Input: </label>
@@ -53,7 +54,7 @@ export default function Home() {
         </div>
 
         <p>------------</p>
-        <SubmitForm />
+
         <p>------------</p>
         <p>------------</p>
         <p>make a registration form - in progress</p>
