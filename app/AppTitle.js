@@ -2,7 +2,7 @@ import React from "react";
 
 const AppTitle = () => {
   return (
-    <div className="bg-stone-100 rounded-lg p-4 mt-5 font-mono">
+    <div className="bg-stone-100 rounded-lg p-4 mt-5">
       <p className="text-center mx-5 mb-4 underline underline-offset-4">
         P19 - Basic Registration Form
       </p>

@@ -5,19 +5,16 @@ import AppTitle from "./AppTitle";
 import RegisterForm from "./RegisterForm";
 
 export default function Home() {
-
   return (
     <main className="flex min-h-screen flex-col items-center p-10">
-      
       <NextjsLogo />
 
       <div>
         <AppTitle />
         <RegisterForm />
-        <p>------------</p>
-        <p>------------</p>
-      <a href="http://localhost:3000/data">Data Page</a>
-        <p>------------</p>
+        <div className="flex justify-end">
+          <a className="bg-green-500 text-white flex p-3 mb-5 text-xs rounded-full" href="http://localhost:3000/data">Data Page</a>
+        </div>
 
         <p>make a registration form - in progress</p>
         <p>first name input - added</p>
@@ -28,7 +25,6 @@ export default function Home() {
         <p>if ok, display success message</p>
         <p>if not ok, display error on each input</p>
       </div>
-
     </main>
   );
 }
