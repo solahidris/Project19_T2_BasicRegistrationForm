@@ -1,4 +1,4 @@
-import React from "react";
+// our-domain.com/news 
 
 const fnValue = "fnValue";
 

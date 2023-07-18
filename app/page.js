@@ -1,3 +1,5 @@
+// our-domain.com/
+
 import NextjsLogo from "./NextjsLogo";
 import AppTitle from "./AppTitle";
 import RegisterForm from "./RegisterForm";
@@ -14,6 +16,7 @@ export default function Home() {
         <RegisterForm />
         <p>------------</p>
         <p>------------</p>
+      <a href="http://localhost:3000/data">Data Page</a>
         <p>------------</p>
 
         <p>make a registration form - in progress</p>
