@@ -1,4 +1,4 @@
-// our-domain.com/data
+our-domain.com/data
 
 const DataPage = () => {
     return(
@@ -11,3 +11,23 @@ const DataPage = () => {
 };
 
 export default DataPage;
+
+// "use client"
+
+// import { useRouter } from "next/router";
+
+// const ConfirmationPage = () => {
+//   const router = useRouter();
+//   const { firstName, lastName, email } = router.query; // Assuming form data is passed as query parameters
+
+//   return (
+//     <div>
+//       <h1>Confirmation Page</h1>
+//       <p>First Name: {firstName}</p>
+//       <p>Last Name: {lastName}</p>
+//       <p>Email: {email}</p>
+//     </div>
+//   );
+// };
+
+// export default ConfirmationPage;

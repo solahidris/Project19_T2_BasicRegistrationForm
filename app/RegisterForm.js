@@ -1,11 +1,22 @@
 "use client";
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import ReactModal from "react-modal";
+import "./styles/react-modal.css";
 
 const RegisterForm = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
 
   const onSubmit = (data) => {
+    if (Object.keys(errors).length > 0) {
+      setModalMessage("Input Error");
+    } else {
+      setModalMessage("Submit Successful");
+    }
+    setIsModalOpen(true);
     console.log("Form submitted successfully", data);
     reset(); // Reset form fields
   };
@@ -62,6 +73,18 @@ const RegisterForm = () => {
           Submit Form
         </button>
       </form>
+
+      <ReactModal
+        isOpen={isModalOpen}
+        onRequestClose={() => setIsModalOpen(false)}
+        className="modal"
+        overlayClassName="modal-overlay"
+      >
+        <div className="modal-content">
+          <p className="bg-green-500 text-white px-3 py-2 rounded-lg mb-4">{modalMessage}</p>
+          <button onClick={() => setIsModalOpen(false)} className="bg-stone-100 hover:bg-stone-200 px-3 py-2 rounded-lg">Close</button>
+        </div>
+      </ReactModal>
     </div>
   );
 };

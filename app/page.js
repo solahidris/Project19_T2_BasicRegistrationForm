@@ -28,6 +28,10 @@ export default function Home() {
         <p>9) create modal for prompting user on success/error when clicking submit</p>
         <p>10) can use tailwindcss prebuilt for modal and make a modal state OR use react-modal</p>
         <p>11) installed react-modal to try out and added state and modify state on form page</p>
+        <p>12) modal success working now</p>
+        <p>13) figuring out how to show data in data page after submit</p>
+        <p>tech used:-</p>
+        <p>nextjs, react, react-hook-form, react-modal, useState, form, app routing</p>
 
         <p>if ok, display success message</p>
         <p>if not ok, display error on each input</p>
