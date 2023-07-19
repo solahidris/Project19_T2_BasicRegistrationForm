@@ -1,7 +1,7 @@
 //our-domain.com/data
 
 import NextjsLogo from "../NextjsLogo";
-import DataFormSubmission from "./dataFormSubmission";
+import DataFormSubmission from "./DataFormSubmission";
 
 const DataPage = () => {
   return (
