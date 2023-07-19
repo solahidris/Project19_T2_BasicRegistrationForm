@@ -26,7 +26,7 @@ const DataFormSubmission = () => {
           </div>
         ))}
       </div>
-      <a href="http://localhost:3000/">Return Homepage</a>
+      <a href="https://project19-t2-next-js-basic-registration-form.vercel.app/">Return Homepage</a>
     </div>
   );
 };

@@ -15,7 +15,7 @@ export default function Home() {
         <RegisterForm />
         <p className="mt-4 mb-1 text-end text-xs">Click here to see forms submitted</p>
         <div className="flex justify-end">
-          <a className="bg-green-500 text-white flex p-3 mb-5 text-xs rounded-full" href="http://localhost:3000/data">Data Page</a>
+          <a className="bg-green-500 text-white flex p-3 mb-5 text-xs rounded-full" href="https://project19-t2-next-js-basic-registration-form.vercel.app/data">Data Page</a>
         </div>
         <CodeHow />
       </div>
