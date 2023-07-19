@@ -12,7 +12,7 @@ const CodeHow = () => {
         3) tried using useState but was not ideal since need to display error as
         well
       </p>
-      <p>4) couldnt import due to not declaring "use client"</p>
+      <p>4) couldnt import due to not declaring &quot;use client&quot;</p>
       <p>5) finished reading docs and understood app routing method</p>
       <p>
         6) figured out that can use either react-hook-form / formik with yup
@@ -37,7 +37,7 @@ const CodeHow = () => {
       <p>12) modal success working now</p>
       <p>13) figuring out how to show data in data page after submit</p>
       <p>14) decided to store data using localstorage and not an external db</p>
-      <p>15) made new page called "data" and display form results there</p>
+      <p>15) made new page called &quot;data&quot; and display form results there</p>
       <br></br>
       <p>tech used:-</p>
       <p>
