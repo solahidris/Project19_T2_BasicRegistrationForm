@@ -1,33 +1,15 @@
 //our-domain.com/data
 
+import NextjsLogo from "../NextjsLogo";
+import DataFormSubmission from "./dataFormSubmission";
+
 const DataPage = () => {
-    return(
-        <div className="bg-stone-100 min-h-[100vh]">
-            <h1>This is the Data Page</h1>
-            <h3>---------------------</h3>
-            <a href="http://localhost:3000/">Home</a>
-        </div>
-    )
+  return (
+    <main className="flex min-h-screen flex-col p-10">
+      <NextjsLogo />
+      <DataFormSubmission />
+    </main>
+  );
 };
 
 export default DataPage;
-
-// "use client"
-
-// import { useRouter } from "next/router";
-
-// const ConfirmationPage = () => {
-//   const router = useRouter();
-//   const { firstName, lastName, email } = router.query; // Assuming form data is passed as query parameters
-
-//   return (
-//     <div>
-//       <h1>Confirmation Page</h1>
-//       <p>First Name: {firstName}</p>
-//       <p>Last Name: {lastName}</p>
-//       <p>Email: {email}</p>
-//     </div>
-//   );
-// };
-
-// export default ConfirmationPage;
