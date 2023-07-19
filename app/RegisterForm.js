@@ -5,16 +5,21 @@ import { useForm } from "react-hook-form";
 import ReactModal from "react-modal";
 import "./styles/react-modal.css";
 
+
 const RegisterForm = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalMessage, setModalMessage] = useState("");
+
+  // NEW 19/7
+  const [formSubmissions, setFormSubmissions] = useState([]);
 
   const onSubmit = (data) => {
     if (Object.keys(errors).length > 0) {
       setModalMessage("Input Error");
     } else {
       setModalMessage("Submit Successful");
+      setFormSubmissions([data, ...formSubmissions]); // NEW 19/7
     }
     setIsModalOpen(true);
     console.log("Form submitted successfully", data);
@@ -73,6 +78,14 @@ const RegisterForm = () => {
           Submit Form
         </button>
       </form>
+        
+        {/* // NEW 19/7 */}
+      <div>
+        {formSubmissions.map((submission, index) => (
+          <p key={index}>{JSON.stringify(submission)}</p>
+        ))}
+      </div>
+
 
       <ReactModal
         isOpen={isModalOpen}

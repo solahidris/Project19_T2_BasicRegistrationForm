@@ -1,4 +1,4 @@
-our-domain.com/data
+//our-domain.com/data
 
 const DataPage = () => {
     return(
